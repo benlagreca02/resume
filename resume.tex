@@ -1,0 +1,153 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+
+% set margin sizes
+\usepackage[
+top=0.75in,
+bottom=0.75in,
+left=1in,
+right=1in,
+]{geometry}
+\usepackage{moresize}
+\usepackage{enumitem}
+\usepackage{url}
+
+% sections will be Large, bold, and have a line
+\titleformat{\section}  % changes what \section does
+{\Large\bfseries} % formatting
+{} % numbering
+{0pt} % distance between numbering, and text
+{} [\titlerule]
+
+% first is space above, second is space below
+\titlespacing*{\section}{0pt}{0.4\baselineskip}{0.4\baselineskip}
+
+% subsections will be large, bold, projects and workplaces
+\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0.2\baselineskip}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+
+% control size of space after itemize
+\setlist[itemize]{after=\vspace{-1em}}
+
+\title{Resume}
+\author{Benjamin LaGreca}
+\thispagestyle{empty}  % removes page number at bottom
+
+
+% ################################ DOCUMENT BODY ################################
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge\bfseries\underline{\theauthor}} \\
+    \vspace{.75em}
+    Email: \url{benlagreca02@gmail.com} \\
+    Phone: (716) 343-4869 \\
+    GitHub: \url{https://github.com/benlagreca02}
+    \vspace{.25em}
+    
+    \bfseries Objective: Get a computer, or software engineering Co-op for the 
+    summer of 2024.
+\end{center}
+
+\vspace{-1em}
+
+\section{Education and Academics}
+
+    \subsection{Rochester Institute of Technology \hfill Graduation: May 2025}
+    Computer Engineering, Masters \& Bachelor of Science (Dual degree Masters/Bachelors 
+    program), GPA: 3.7
+    % \subsection{Lockport High School \hfill Class of 2020}
+    % Graduated in top 10\%. National, Science, and Mathematics Honors society member.
+
+\section {Skills}
+    \begin{itemize}[noitemsep]
+        \item
+            C/C++, Python, VHDL, and Dart/Flutter programming
+        \item
+            Linux and Linux tools including git, Vim, gcc, gdb, valgrind, make,
+            bash, etc
+        \item
+            Computer Networking and Linux Socket Programming
+        \item
+            Soldering, Crimping, and making wire harnesses \& connectors for various 
+            applications
+        % \item
+            % Basic knowledge of the {\LaTeX} software system
+    \end{itemize}
+\section{Projects}
+    \subsection{Nintendo 64 Controller Adapter}
+    Used an Arduino Uno to interface with and recieve data from a Nintendo 64
+    controller, which sent that data to a Arduino Pro-Micro over I2C. The
+    Pro-micro emulated a generic gamepad over USB. Requried understanding of the
+    communication protocol, and deep understanding of the Arduino's I/O system due 
+    to timing constraints.
+
+    \subsection{Python Biamp Network Discovery Tool}
+    Wrote a Python program that discovers devices from the Tesira
+    product line. The program sends a packet to a multicast address that Tesira
+    devices listened to, and devices responded with relevant info. The program
+    then could request more data from each device through a proprietary
+    protocol. Displays data obtained in a PyQt5 generated GUI. Required low level 
+    networking, and a strong understanding of socket programming.
+
+    % \subsection{Simplified MIPS processor}
+    % Created a simplified, Pipelined MIPS processor using VHDL in Digital Systems 
+    % Design II.
+
+\section{Experience}
+
+    \subsection{L3Harris Systems/Software Engineering Co-op \hfill (May -
+    August 2023)}
+        \begin{itemize}[noitemsep]
+            \item Implemented and helped design a protocol for a tactical router
+                and aided in the patent filing process.
+            \item Designed and implemented Linux socket code for a new tactical
+                router.
+        \end{itemize}
+
+    \subsection{Biamp Systems Firmware Engineering Co-op \hfill (May - December 2022)}
+        \begin{itemize}[noitemsep]
+            \item Implemented a C++ interface to work with PTP4L, a terminal based 
+                PTP (Precision time protocol) management client for Linux.  
+            \item Developed a Python program using PyQt5 GUI framework to
+                discover the company's products on selected subnets.
+        \end{itemize}
+
+    \subsection{TA for Assembly and Embedded programming \hfill (2022-2023)}
+    \begin{itemize}[noitemsep]
+        \item Help students with various ARM assembly labs ranging from initializing 
+            a UART drivers on the KL46 chip\, to implementing circular FIFO queues. 
+        \item Requires strong debugging abilities, and a thorough understanding of 
+            course material
+    \end{itemize}
+
+    \subsection{MAHLE Electrical Component Engineer Internship\hfill (Summer 2021)}
+        \begin{itemize}[noitemsep]
+            \item Performed a warranty analysis process on return parts including 
+                logging, testing, and documenting results.
+            \item Streamlined warranty logging process with Excel VBA scripting.
+            \item Constructed various adapters, wire harnesses, and actuator drivers 
+                for testing and control.
+        \end{itemize}
+
+    \subsection{FIRST Robotics FRC team 1507\hfill (2017-2020)}
+        \begin{itemize}[noitemsep]
+            \item Lead Programmer for FRC team 1507 The Warlocks
+            \item Lead group of 5+ student programmers to program a large robot in 
+                C++ to preform various autonomous and human driven tasks.
+        \end{itemize}
+ 
+    % \subsection{Lockport Caves \hfill (2018-2019)}
+    % Employed as tour guide and for general maintenance. Gave hour long tour to 
+    % groups of 20+ people. Required having a very flexible schedule.
+        
+    % might delete this part????
+    % \section{Classes and Labs}
+    % Applied Programming in C, Digital Signal Processing, Digital Systems and Design 1 \& 2 (VHDL \& Logic Circuits), 
+
+
+\end{document}
