@@ -29,15 +29,13 @@ right=1in,
 \titleformat{\subsection}{\large\bfseries}{}{0pt}{}
 
 % control size of space after itemize
-\setlist[itemize]{after=\vspace{-1em}}
+\setlist[itemize]{after=\vspace{-0.75em}}
 
 \title{Resume}
 \author{Benjamin LaGreca}
 \thispagestyle{empty}  % removes page number at bottom
 
-
 % ################################ DOCUMENT BODY ################################
-
 
 \begin{document}
 
@@ -49,8 +47,8 @@ right=1in,
     GitHub: \url{https://github.com/benlagreca02}
     \vspace{.25em}
     
-    \bfseries Objective: Get a computer, or software engineering Co-op for the 
-    summer of 2024.
+    \bfseries Objective: Get a computer, or software engineering position
+    post-graduation (Spring of 2025)
 \end{center}
 
 \vspace{-1em}
@@ -68,48 +66,62 @@ right=1in,
         \item
             C/C++, Python, VHDL, and Dart/Flutter programming
         \item
-            Linux and Linux tools including git, Vim, gcc, gdb, valgrind, make,
-            bash, etc
+            Linux C programming and common Linux tools including git, Vim, ip, gcc, gdb, make,
+            bash, etc.
         \item
             Computer Networking and Linux Socket Programming
         \item
-            Soldering, Crimping, and making wire harnesses \& connectors for various 
-            applications
+            ROS2, Gazebo, URDF, MoveIt and related technologies
+        \item
+            PyTorch for various AI applications.
+
+
+        % \item
+            % Soldering, Crimping, and making wire harnesses \& connectors for various 
+            % applications
         % \item
             % Basic knowledge of the {\LaTeX} software system
     \end{itemize}
 \section{Projects}
+
+    \subsection{Spot Robotic Arm (Multidisciplinary Senior Design)}
+    Aided in the design and production of a robotic arm for Boston Dynamic's Spot platform.
+    Learned and used ROS2, Gazebo, URDF, and related tools for simulation and
+    control of robotic arm.
+
     \subsection{Nintendo 64 Controller Adapter}
     Used an Arduino Uno to interface with and recieve data from a Nintendo 64
-    controller, which sent that data to a Arduino Pro-Micro over I2C. The
+    controller, which sent controller data to a Arduino Pro-Micro over I2C. The
     Pro-micro emulated a generic gamepad over USB. Requried understanding of the
     communication protocol, and deep understanding of the Arduino's I/O system due 
     to timing constraints.
 
     \subsection{Python Biamp Network Discovery Tool}
     Wrote a Python program that discovers devices from the Tesira
-    product line. The program sends a packet to a multicast address that Tesira
-    devices listened to, and devices responded with relevant info. The program
-    then could request more data from each device through a proprietary
-    protocol. Displays data obtained in a PyQt5 generated GUI. Required low level 
-    networking, and a strong understanding of socket programming.
+    product line. The program sent a packet to a multicast address that Tesira
+    devices listened for, and devices responded with relevant info. The program
+    could then communicate with devices through a proprietary
+    protocol. Displayed relevant in a PyQt5 generated GUI. Required low level 
+    networking, PyQt5, and a strong understanding of socket programming.
 
     % \subsection{Simplified MIPS processor}
     % Created a simplified, Pipelined MIPS processor using VHDL in Digital Systems 
     % Design II.
 
 \section{Experience}
-
     \subsection{L3Harris Systems/Software Engineering Co-op \hfill (May -
-    August 2023)}
+    August 2023 and 24)}
         \begin{itemize}[noitemsep]
-            \item Aided in patent filing and research, implementation, and
-                design of a protocol for a new tactical router.
+            \item Aided in patent filing, research, implementation, and design
+                of a new protocol for automatic GRE tunneling for a tactical router.
+            \item Reverse engineered iproute2 package for functionality of
+                netlink sockets. Used netlink sockets for communication with the
+                Linux kernel to create, modify, and destroy IP GRE tunnels 
+                modification.
             \item Designed and implemented Linux socket code for a new tactical
                 router.
-            \item Reverse engineered iproute2 package for functionality of
-                netlink sockets. Used netlink sockets for IP GRE tunnel creation and
-                modification.
+            \item Wrote XDP BPF programs and XDP socket programs to improve
+                performance of a tactial router.
         \end{itemize}
 
     \subsection{Biamp Systems Firmware Engineering Co-op \hfill (May - December 2022)}
@@ -122,33 +134,33 @@ right=1in,
 
     \subsection{TA for Assembly and Embedded programming \hfill (2022-2023)}
     \begin{itemize}[noitemsep]
-        \item Help students with various ARM assembly labs ranging from initializing 
-            a UART drivers on the KL46 chip\, to implementing circular FIFO queues. 
-        \item Requires strong debugging abilities, and a thorough understanding of 
+        \item Helped students with ARM assembly labs ranging from creating 
+            a simple UART driver, to implementing circular FIFO queues and
+            interrupt handlers
+        \item Required strong debugging abilities, and a thorough understanding of 
             course material
     \end{itemize}
 
-    \subsection{MAHLE Electrical Component Engineer Internship\hfill (Summer 2021)}
-        \begin{itemize}[noitemsep]
-            \item Performed a warranty analysis process on return parts including 
-                logging, testing, and documenting results.
-            \item Streamlined warranty logging process with Excel VBA scripting.
-            \item Constructed various adapters, wire harnesses, and actuator drivers 
-                for testing and control.
-        \end{itemize}
+    % \subsection{MAHLE Electrical Component Engineer Internship\hfill (Summer 2021)}
+    %     \begin{itemize}[noitemsep]
+    %         \item Performed a warranty analysis process on return parts including 
+    %             logging, testing, and documenting results.
+    %         \item Streamlined warranty logging process with Excel VBA scripting.
+    %         \item Constructed various adapters, wire harnesses, and actuator drivers 
+    %             for testing and control.
+    %     \end{itemize}
 
-    \subsection{FIRST Robotics FRC team 1507\hfill (2017-2020)}
-        \begin{itemize}[noitemsep]
-            \item Lead Programmer for FRC team 1507 The Warlocks
-            \item Lead group of 5+ student programmers to program a large robot in 
-                C++ to preform various autonomous and human driven tasks.
-        \end{itemize}
+    % \subsection{FIRST Robotics FRC team 1507\hfill (2017-2020)}
+    %     \begin{itemize}[noitemsep]
+    %         \item Lead Programmer for FRC team 1507 The Warlocks
+    %         \item Lead group of 5+ student programmers to program a large robot in 
+    %             C++ to preform various autonomous and human driven tasks.
+    %     \end{itemize}
  
     % \subsection{Lockport Caves \hfill (2018-2019)}
     % Employed as tour guide and for general maintenance. Gave hour long tour to 
     % groups of 20+ people. Required having a very flexible schedule.
         
-    % might delete this part????
     % \section{Classes and Labs}
     % Applied Programming in C, Digital Signal Processing, Digital Systems and Design 1 \& 2 (VHDL \& Logic Circuits), 
 
